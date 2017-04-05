@@ -1,26 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="hostApp">
+<head>
+<meta charset=utf-8>
+<title>Home Website</title>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="shortcut icon" href="">
 
-  <head>
-    <title>NodeJS Starter Application</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="stylesheets/style.css">
-  </head>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.min.js"></script>
 
-  <body>
-    <table>
-      <tr>
-        <td style= "width:30%;">
-          <img class = "newappIcon" src="images/newapp-icon.png">
-        </td>
-        <td>
-          <h1 id="message">Hello Jinsoo who jinhyeok's girlfriend!</h1>
-          <p class='description'></p> Thanks for creating a <span class = "blue">NodeJS Starter Application</span>.
-        </td>
-      </tr>
-    </table>
-  </body>
+<script src="/app/app.js"></script> </head>
 
+<body ng-controller="mainController">
+<header>
+<nav class="navbar navbar-default">
+<div class="container">
+<div class="navbar-header">
+<a class="navbar-brand" href="/">Home Web Server</a>
+</div>
+
+<ul class="nav navbar-nav navbar-right">
+<li><a href="/#!/"><i class="fa fa-home"></i> HOME</a></li>
+<li><a href="/#!/about"><i class="fa fa-shield"></i> ABOUT</a></li>
+</ul>
+</div>
+</nav>
+</header>
+
+<!-- MAIN CONTENT -->
+<div id="main">
+<!--
+<div class="text-center">
+{{ message }}
+<p />
+</div>
+-->
+<!-- angular templating -->
+<div ng-view></div>
+</div>
+
+<!-- FOOTER -->
+<footer class="text-center">
+Copyright &copy;2016 yummyHit
+</footer>
+</body>
 </html>
