@@ -2,17 +2,20 @@
 <html ng-app="hostApp">
 <head>
 <meta charset=utf-8>
-<title>Home Website</title>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-<link rel="shortcut icon" href="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Website</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="shortcut icon" href="">
 
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.min.js"></script>
 
 <script src="/app/app.js"></script> </head>
 
-<body ng-controller="mainController">
+<!-- <body ng-controller="mainController">
 <header>
 <nav class="navbar navbar-default">
 <div class="container">
@@ -26,7 +29,19 @@
 </ul>
 </div>
 </nav>
-</header>
+</header> -->
+<body>
+    <table>
+      <tr>
+        <td style= "width:30%;">
+          <img class = "newappIcon" src="images/newapp-icon.png">
+        </td>
+        <td>
+          <h1 id="message">Hello Jinsoo who jinhyeok's girlfriend!</h1>
+          <p class='description'></p> Thanks for creating a <span class = "blue">NodeJS Starter Application</span>.
+        </td>
+      </tr>
+    </table>
 
 <!-- MAIN CONTENT -->
 <div id="main">
